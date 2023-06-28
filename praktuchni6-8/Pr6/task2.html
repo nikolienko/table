@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .container {
+          width: 400px;
+          padding: 20px;
+          border: 1px solid #ccc;
+          text-align: center;
+        }
+    
+        .question {
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+    
+        .options {
+          display: flex;
+          justify-content: left;
+        }
+    
+        .option {
+          margin: 0 10px;
+        }
+    
+        .result {
+          margin-top: 20px;
+          font-weight: bold;
+        }
+      </style>
+</head>
+<body class="body">
+    <div>
+        <h1>Тестування</h1>
+        <p class="question">Що можна пити?</p>
+        <div class="options">
+            <button class="option" onclick="checkAnswer(this)">Воду</button>
+            <button class="option" onclick="checkAnswer(this)">Траву</button>
+            
+        </div>
+        <p class="result" id="result"></p>
+    </div>
+    <div class="elements">
+        <a href="../index.html"><div class="button">Повернутися</div></a>
+    </div>
+    <script src="../main.js"></script>
+</body>
+</html>
