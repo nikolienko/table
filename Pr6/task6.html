@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+<body>
+    <form method="post" action="mailto:vlad.drishchuk@gmail.com">
+        <div>
+        <label for="email">Адреса e-mail:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+        <label for="subject">Тема повідомлення:</label>
+        <input type="text" id="subject" name="subject">
+    </div>
+    <div>
+        <label for="message">Повідомлення:</label>
+        <textarea id="message" name="message" required></textarea>
+    </div>
+    <div>
+        <button type="submit">Надіслати</button>
+    </div>
+    </form>
+</body>
+</html>
